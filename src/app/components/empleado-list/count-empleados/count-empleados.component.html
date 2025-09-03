@@ -1,1 +1,19 @@
-<p>count-empleados works!</p>
+  <div class="card">
+    <div class="card-body">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" [(ngModel)]="sexoSeleccionado" type="radio" name="sexo" id="todos"
+          value="Todos" (change)="radioChange()">
+        <label class="form-check-label" for="todos">Todos({{this.todos}})</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" [(ngModel)]="sexoSeleccionado" type="radio" name="sexo" id="femenino"
+          value="Femenino" (change)="radioChange()">
+        <label class="form-check-label" for="femenino">Femenino({{this.mujeres}})</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" [(ngModel)]="sexoSeleccionado" type="radio" name="sexo" id="masculino"
+          value="Masculino" (change)="radioChange()">
+        <label class="form-check-label" for="masculino">Masculino({{this.hombres}})</label>
+      </div>
+    </div>
+  </div>

@@ -38,4 +38,7 @@ export class EmpleadoListComponent implements OnInit{
   contarMujeres():number{
     return this.listEmpleados.filter(e=>e.sexo==="Femenino").length;
   }
+  empleadoRadioButtonChange(informacion:string):void{
+    this.sexoSeleccionado=informacion;
+  }
 }
